@@ -35,6 +35,13 @@ const Card = (data) => {
             <span class="image__photog">${imgData.user.name}</span>.
           </p>
           <p>
+          Uploaded on
+          <time class="image_date" datetime="${imgData.created_at}">
+          ${
+              date.toLocaleString("en-UK")
+          }</time>
+          </p>
+          <p>
             <a href="${imgData.links.self}" class="image__link">
               View it on Unsplash.
             </a>
